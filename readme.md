@@ -1,3 +1,4 @@
+
 # Quality of Life improvements in IIT Delhi
 
 Life in IIT Delhi for a student (in general, and CS student in particular) is filled with senseless oddities. This repo's eventual aim is to remove as many of those as possible with code, and make the code simple enough to be used by anyone. Currently, only userscripts are present in the repo, but as I get more time (and more annoyed with things), expect a wider number and variety of things to be added here.
@@ -13,8 +14,23 @@ Moodle is a nice, useful software which helps students, TAs and teachers interfa
 
 ### Usage
 
-1. Install [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en) (depending on which browser you prefer).
+1. Install an extension that can run Userscripts, depending on which browser you prefer:
 
-2. Create a new script, and copy paste the contents of the userscript you want into it.
+    * Firefox - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=firefox) or [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) (recommended).
+    * Chrome - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=chrome).
+    * Safari - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=safari).
+    * Opera - install [Tampermonkey](https://tampermonkey.net/?ext=dhdg&browser=opera) or [Violent Monkey](https://addons.opera.com/en/extensions/details/violent-monkey/).
+
+2. Once you have the extension installed, clicking on the direct links below to install the scripts as well:
+
+| Userscript Name |   Direct Install Links   |
+|:----------------|:------------------------:|
+| Moodle Captcha  |  [install][moodle-raw]   |
+| Roundcube Login | [install][roundcube-raw] |
 
 3. All done! Enjoy your slightly better life now :)
+
+
+
+[roundcube-raw]: https://raw.githubusercontent.com/kwikadi/IITD-QOL/master/Roundcube%20Login.user.js
+[moodle-raw]: https://raw.githubusercontent.com/kwikadi/IITD-QOL/master/IITD%20Moodle%20Captcha.user.js
