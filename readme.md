@@ -34,3 +34,15 @@ Moodle is a nice, useful software which helps students, TAs and teachers interfa
 
 [roundcube-raw]: https://raw.githubusercontent.com/kwikadi/IITD-QOL/master/Roundcube%20Login.user.js
 [moodle-raw]: https://raw.githubusercontent.com/kwikadi/IITD-QOL/master/IITD%20Moodle%20Captcha.user.js
+
+## Python3 Proxy Script for IITD logins
+
+This is basically https://github.com/1upon0/iitd-proxy-login except ported to python3. Why do I need this at all, and why did I port this to python3? Well, Ubuntu now ships with python3 only, and if you login through the browser window, networking wont work on the terminal. So yeah, instead of figuring out how to install python2 on my system (which is a ticking time bomb anyway), I figured it was easier to port the script to python3.
+
+### Usage
+
+`python3 login-terminal.py username password proxy_category`
+
+where `username` and `password` are your kerberos creds, and `proxy_category` is probably one of 'btech','mtech', 'dual', or 'phd' for you. (See entire list on line 17 of login-terminal.py)
+
+`Ctrl-C` to logout.
